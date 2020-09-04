@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head><p style = "font-family: :Helvetica;font-size:20px;color: #ffffff; font-style:bold;background-color: #F85F5F">
+         Free shipping on order over NPR 20,000. 
+         <a href="https://www.facebook.com/prajwol.twr"><img src="fb.png" height="30" width="30">
+			<a href="https://www.instagram.com/prajwol.twr/?hl=en"><img src="insta.png" height="30" width="30">
+			<a href="https://twitter.com/Prajwol_twr"><img src="twitter.png" height="30" width="30"></a></a></a>
+      </p></head>
+	<title>iPhone XS MAX</title>
+	<link rel="stylesheet" type="text/css" href="css/iphone.css">
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;"><a href="index.html">
+			<img src="logo.png" alt="CartExpress" width="200" height="70"></a></h1>
+		<div class="header">
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="products.html">Products</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="research.html">Research</a></li>
+				<li> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 style="text-align: center;margin-left: 680px; margin-top: 5px; position: absolute;">
+			<img src="applogo.png" alt="iPhone" height="115" width="115" align="center"></h1>
+	<div class="iphone">
+		<div>
+		<img src="iphonexs.png" class="images">
+		<img src="iphone2.png" class="images">
+		<img src="iphone3.png" class="images">
+	</div>
+	<center>
+		<button onclick="change(-1)">&lt;</button>
+		<button onclick="change(1)">&gt;</button>
+	</center>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+	</script>
+</div>
+	<table id="t01">
+	  <tr>
+	    <th>Specifications</th>
+	    <th></th> 
+	  </tr>
+	  <tr>
+	    <td width="30%">Brand</td>
+	    <td>Apple</td>
+	  </tr>
+	  <tr>
+	    <td>Processor</td>
+	    <td>A12 Bionic Chip
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Display</td>
+	    <td>6.5" Oled Touchscreen</td>
+	  </tr>
+	  <tr>
+	    <td>Dimension</td>
+	    <td>157.5 mm x 77.4 mm x 7.7 mm
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Weight (g)	</td>
+	    <td>177.00</td>
+	  </tr>
+	  <tr>
+	    <td>Battery capacity (mAh)	</td>
+	    <td>2658</td>
+	  </tr>
+	</table>
+	<h1 style="text-align: center;margin-top: 10px;"><a href="contact.html">
+			<img src="buy.png" alt="Buy Now" height="150" width="150"></a></h1>
+<div class="footer">
+			<p>@ 2019 CartExpress. All Rights Reserved</p>
+			<p>Designed by Prajwol Tiwari</p>
+		</div>
+</body>
+</html>
+
+	

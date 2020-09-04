@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head><p style = "font-family: :Helvetica;font-size:20px;color: #ffffff; font-style:bold;background-color: #F85F5F">
+         Free shipping on order over NPR 20,000. 
+         <a href="https://www.facebook.com/prajwol.twr"><img src="fb.png" height="30" width="30">
+			<a href="https://www.instagram.com/prajwol.twr/?hl=en"><img src="insta.png" height="30" width="30">
+			<a href="https://twitter.com/Prajwol_twr"><img src="twitter.png" height="30" width="30"></a></a></a>
+      </p></head>
+	<title>XPS 15</title>
+	<link rel="stylesheet" type="text/css" href="css/dell.css">
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;"><a href="index.html">
+			<img src="logo.png" alt="CartExpress" width="200" height="70"></a></h1>
+		<div class="header">
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="products.html">Products</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="research.html">Research</a></li>
+				<li> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 style="text-align: center;margin-left: 680px; margin-top: 5px; position: absolute;">
+			<img src="delllogo.png" alt="Dell" height="115" width="115" align="center"></h1>
+	<div class="dell">
+		<div>
+		<img src="dell.png" class="images">
+		<img src="dell1.png" class="images">
+		<img src="dell2.png" class="images">
+	</div>
+	<center>
+		<button onclick="change(-1)">&lt;</button>
+		<button onclick="change(1)">&gt;</button>
+	</center>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+	</script>
+</div>
+	<table id="t01">
+	  <tr>
+	    <th>Specifications</th>
+	    <th></th> 
+	  </tr>
+	  <tr>
+	  	<td width="30%">Brand</td>
+	    <td>DELL</td>
+	  </tr>
+	  <tr>
+	    <td>CPU</td>
+	    <td>2.2GHz Intel Core i7-8750H (hexa-core, 9MB cache, up to 4.1GHz)
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Display</td>
+	    <td>15.6-inch 4K UHD</td>
+	  </tr>
+	  <tr>
+	    <td>Graphics</td>
+	    <td>Intel UHD Graphics 630; Nvidia GeForce GTX 1050 Ti (4GB GDDR5)
+	</td>
+	  </tr>
+	  <tr>
+	    <td>RAM	</td>
+	    <td>16GB</td>
+	  </tr>
+	  <tr>
+	    <td>Storage	</td>
+	    <td>512GB SSD (M.2 2280 PCIe)</td>
+	  </tr>
+	</table>
+	<h1 style="text-align: center;margin-top: 10px;"><a href="contact.html">
+			<img src="buy.png" alt="Buy Now" height="150" width="150"></a></h1>
+<div class="footer">
+			<p>@ 2019 CartExpress. All Rights Reserved</p>
+			<p>Designed by Prajwol Tiwari</p>
+		</div>
+</body>
+</html>
+
+	

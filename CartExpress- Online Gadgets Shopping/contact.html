@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head><p style = "font-family: :Helvetica;font-size:20px;color: #ffffff; font-style:bold;background-color: #F85F5F">
+         Free shipping on order over NPR 20,000. 
+         <a href="https://www.facebook.com/prajwol.twr"><img src="fb.png" height="30" width="30">
+			<a href="https://www.instagram.com/prajwol.twr/?hl=en"><img src="insta.png" height="30" width="30">
+			<a href="https://twitter.com/Prajwol_twr"><img src="twitter.png" height="30" width="30"></a></a></a>
+      </p></head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;"><a href="index.html">
+			<img src="logo.png" alt="CartExpress" width="200" height="70"></a></h1>
+		<div class="header">
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="products.html">Products</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="research.html">Research</a></li>
+				<li class="active"> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 style="text-align: center;margin-left: 580px; margin-top: 10px; position: absolute;">
+			<img src="contact.png"alt="Contact"  align="center">
+		</a></h1>
+<div class="form1">
+	<div class="form">
+	  <form name="ContactForm"onsubmit="contactForm()"class="form">
+	  <p style="font-family:verdana;">First name:<br>
+	  <input type="text" name="firstname">
+	  </p>
+	  <p style="font-family:verdana;">Last name:<br>
+	  <input type="text" name="lastname">
+	  </p>
+	  <p style="font-family:verdana;">Gender:<br>
+	  <input type="radio" name="gender" value="male"> Male
+	  <br>
+	  <input type="radio" name="gender" value="female"> Female
+	  <br>
+	  <input type="radio" name="gender" value="other"> Other
+	  </p>
+	  <p style="font-family:verdana;">Email:<br>
+	  <input type="text" name="email">
+	  </p>
+	  <p style="font-family:verdana;">Message:<br>
+	  <textarea name="message"></textarea>
+	  <p><input type="submit"value="SEND IT"class="box"></p>
+	</form>
+	<script>
+	function contactForm() {
+
+		var fname = document.forms["ContactForm"]["firstname"].value;
+		var lname = document.forms["ContactForm"]["lastname"].value;
+		var genders = document.forms["ContactForm"]["gender"].value;
+		var emails = document.forms["ContactForm"]["email"].value;
+		var messages = document.forms["ContactForm"]["message"].value;
+
+		if (fname == "" || lname == "" || genders == "" || emails == "" || messages == ""){
+			alert("Empty fields found. Please fill the form.");
+		}
+		else {
+			alert("Thank you for the feedback.");
+		}
+
+
+	}
+</script>
+</div>
+</div>
+	<div class="footer">
+			<p>@ 2019 CartExpress. All Rights Reserved</p>
+			<p>Designed by Prajwol Tiwari</p>
+		</div>
+	</body>
+</html>
+
+	
