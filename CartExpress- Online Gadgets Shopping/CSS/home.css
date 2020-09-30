@@ -1,92 +1,114 @@
-*{	/*Setting margin, padding and font style for whole page*/
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica;
+* {
+    /*Setting margin, padding and font style for whole page*/
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
 }
-header{
-	background-color: #F8EFED;
 
+header {
+    background-color: #F8EFDD;
 }
-img{	/*defining margins for images in this webpage*/
-	
-	margin-left: auto;
-  	margin-right: auto;
-  	
+
+img {
+    /*defining margins for images in this webpage*/
+    margin-left: auto;
+    margin-right: auto;
 }
-ul{
-	overflow: hidden;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: #F85F5F;
+
+ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F85F5F;
 }
 
 li {
-	float: left;
-	margin-left: 180px;
-	}
-
-	li a {
-	display: block;
-	color: #ffffff;
-	padding: 15px 17px;
-	text-decoration: none;
-	text-align: center;
+    float: right;
+    margin-left: auto;
 }
 
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 15px 17px;
+    text-decoration: none;
+    text-align: center;
+}
 
+ul li a:hover {
+    /*This highlights the tab when we hover over it in navigation bar*/
+    background-color: #f7efef;
+    color: black;
+}
 
-ul li a:hover{ 	/*This highlights the tab when we hover over it in navigation bar*/
-	background-color: #F0B4B4;
-	color: white;
+ul li.active a {
+    /*This highlights the currently opened tab*/
+    background-color: #F0B4B4;
+    color: black;
 }
-ul li.active a{ 	/*This highlights the currently opened tab*/
-	background-color: #F0B4B4;
-	color: white;
-}
-body{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../background.jpg); /*inserting a background and shadowing it with black color*/
-	height: auto;
-	width: auto;
-}
-.bannerdiv{
-	width: 920;
-	height: 270;
-	position: absolute;
-	margin-left: 300px;
-	margin-top: 5px;
-	top: 22%;
-	background-image: url(../banner.png);
-	
-	
-	box-shadow: 1px 2px 5px white;
-	animation: slider 20s infinite linear;
-}
-@keyframes slider{
-	0%{background-image: url(../banner.png); }
-	25%{background-image: url(../blackfriday.png);}
-	50%{background-image: url(../iphone.png);}
-	75%{background-image: url(../s10.png);}
 
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../background.jpg);
+    /*inserting a background and shadowing it with black color*/
+    height: auto;
+    width: auto;
 }
+
+.bannerdiv {
+    width: 920;
+    height: 270;
+    position: absolute;
+    margin: auto;
+    margin-left: 20%;
+    margin-top: 2%;
+    top: 22%;
+    background-image: url(../banner.png);
+    box-shadow: 1px 2px 5px white;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(../banner.png);
+    }
+    25% {
+        background-image: url(../blackfriday.png);
+    }
+    50% {
+        background-image: url(../iphone.png);
+    }
+    75% {
+        background-image: url(../s10.png);
+    }
+}
+
 .column {
- 	background-image: url(../background1.jpg);
-  	float: left;
-  	width: 25%;
-  	margin-top: 400px;
-  	margin-left: 75px;
-  	padding: 15px;
-	}
+    background-image: url(../background1.jpg);
+    float: left;
+    width: 20%;
+    margin-top: 400px;
+    margin-left: 75px;
+    padding: 15px;
+    height: 70%;
+}
+
+.row {
+    padding: auto;
+}
+
 
 /* Clear floats after the columns */
+
 .row:after {
-  	content: "";
-  	display: table;
-  	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
 .footer {
-  	margin-top: 100px;
-  	background-color: #F1F1F1;
-  	text-align: center;
-  	padding: 10px;
+    margin-top: 100px;
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
 }
